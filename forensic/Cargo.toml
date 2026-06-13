@@ -1,0 +1,25 @@
+[package]
+name = "shellhist-forensic"
+version = "0.1.0"
+description = "Forensic anomaly auditor for shell command history — history clearing, timestamp regression, and download-pipe-to-shell as graded report::Finding, built on shellhist-core"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository = "https://github.com/SecurityRonin/shellhist-forensic"
+homepage = "https://github.com/SecurityRonin/shellhist-forensic"
+documentation = "https://docs.rs/shellhist-forensic"
+readme = "README.md"
+keywords = ["forensics", "shell", "history", "dfir", "incident-response"]
+categories = ["parser-implementations", "command-line-utilities"]
+exclude = ["/fuzz", "/.github", "/docs"]
+
+[dependencies]
+shellhist-core = { version = "0.1", path = "../core" }
+# The shared report model (Severity/Category/Observation/Finding).
+forensicnomicon = "0.4"
+
+[dev-dependencies]
+
+[lints]
+workspace = true

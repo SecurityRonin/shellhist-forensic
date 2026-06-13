@@ -1,0 +1,20 @@
+[package]
+name = "shellhist-core"
+version = "0.1.0"
+description = "Shell command-history reader: bash, zsh (extended), PowerShell PSReadLine, and fish history files → typed, timestamped entries"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository = "https://github.com/SecurityRonin/shellhist-forensic"
+homepage = "https://github.com/SecurityRonin/shellhist-forensic"
+documentation = "https://docs.rs/shellhist-core"
+readme = "README.md"
+keywords = ["forensics", "shell", "history", "dfir", "bash"]
+categories = ["parser-implementations", "command-line-utilities"]
+exclude = ["/fuzz", "/.github", "/docs"]
+
+[dependencies]
+
+[lints]
+workspace = true
