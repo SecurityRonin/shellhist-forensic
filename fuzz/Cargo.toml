@@ -1,0 +1,41 @@
+[package]
+name = "shellhist-forensic-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+shellhist-core = { path = "../core" }
+shellhist-forensic = { path = "../forensic" }
+
+[[bin]]
+name = "bash"
+path = "fuzz_targets/bash.rs"
+test = false
+doc = false
+[[bin]]
+name = "zsh"
+path = "fuzz_targets/zsh.rs"
+test = false
+doc = false
+[[bin]]
+name = "fish"
+path = "fuzz_targets/fish.rs"
+test = false
+doc = false
+[[bin]]
+name = "powershell"
+path = "fuzz_targets/powershell.rs"
+test = false
+doc = false
+[[bin]]
+name = "forensic"
+path = "fuzz_targets/forensic.rs"
+test = false
+doc = false
+
+[workspace]
