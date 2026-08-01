@@ -21,23 +21,3 @@ audit-as-crates-io = false
 
 [policy.shellhist-forensic]
 audit-as-crates-io = false
-
-[[exemptions.forensicnomicon]]
-version = "1.0.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.forensicnomicon-core]]
-version = "1.0.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.forensicnomicon-data]]
-version = "1.0.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.shellhist-core]]
-version = "0.1.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.shellhist-forensic]]
-version = "0.2.0"
-criteria = "safe-to-deploy"
